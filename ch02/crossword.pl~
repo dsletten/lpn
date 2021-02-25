@@ -1,0 +1,24 @@
+#!/usr/local/bin/pl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   NAME:               crossword.pl
+%
+%   STARTED:            Wed Jul 28 02:09:03 2010
+%   MODIFICATIONS:
+%
+%   PURPOSE:
+%
+%
+%
+%   CALLING SEQUENCE:
+%
+%
+%   INPUTS:
+%
+%   OUTPUTS:
+%
+%   EXAMPLE:
+%
+%   NOTES:
+%
+%%

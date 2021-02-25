@@ -1,0 +1,24 @@
+#!/usr/local/bin/pl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   Name:               grammar.pl
+%
+%   Started:            Tue Oct 25 01:04:50 2011
+%   Modifications:
+%
+%   Purpose:
+%
+%
+%
+%   Calling Sequence:
+%
+%
+%   Inputs:
+%
+%   Outputs:
+%
+%   Example:
+%
+%   Notes:
+%
+%%

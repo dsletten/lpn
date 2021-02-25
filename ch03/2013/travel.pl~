@@ -1,0 +1,24 @@
+#!/opt/local/bin/swipl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   Name:               travel.pl
+%
+%   Started:            Mon Aug 12 20:41:11 2013
+%   Modifications:
+%
+%   Purpose:
+%
+%
+%
+%   Calling Sequence:
+%
+%
+%   Inputs:
+%
+%   Outputs:
+%
+%   Example:
+%
+%   Notes:
+%
+%%

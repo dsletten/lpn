@@ -1,0 +1,24 @@
+#!/opt/local/bin/swipl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   Name:               ch06.pl
+%
+%   Started:            Sun Aug 25 04:13:31 2013
+%   Modifications:
+%
+%   Purpose:
+%
+%
+%
+%   Calling Sequence:
+%
+%
+%   Inputs:
+%
+%   Outputs:
+%
+%   Example:
+%
+%   Notes:
+%
+%%

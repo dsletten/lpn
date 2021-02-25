@@ -1,0 +1,24 @@
+#!/usr/local/bin/pl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   Name:               arith.pl
+%
+%   Started:            Thu Sep 27 18:47:41 2012
+%   Modifications:
+%
+%   Purpose:
+%
+%
+%
+%   Calling Sequence:
+%
+%
+%   Inputs:
+%
+%   Outputs:
+%
+%   Example:
+%
+%   Notes:
+%
+%%

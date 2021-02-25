@@ -1,0 +1,30 @@
+#!/usr/local/bin/pl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   Name:               ab.pl
+%
+%   Started:            Wed Mar 28 01:38:33 2012
+%   Modifications:
+%
+%   Purpose:
+%
+%
+%
+%   Calling Sequence:
+%
+%
+%   Inputs:
+%
+%   Outputs:
+%
+%   Example:
+%
+%   Notes:
+%
+%%
+
+s --> [].
+s --> l, s, r.
+
+l --> [a].
+r --> [b].

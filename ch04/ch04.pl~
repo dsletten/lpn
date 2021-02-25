@@ -1,0 +1,24 @@
+#!/usr/local/bin/pl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   NAME:               ch04.pl
+%
+%   STARTED:            Wed Sep  1 01:41:15 2010
+%   MODIFICATIONS:
+%
+%   PURPOSE:
+%
+%
+%
+%   CALLING SEQUENCE:
+%
+%
+%   INPUTS:
+%
+%   OUTPUTS:
+%
+%   EXAMPLE:
+%
+%   NOTES:
+%
+%%

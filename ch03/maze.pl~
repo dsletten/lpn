@@ -1,0 +1,24 @@
+#!/usr/local/bin/pl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   NAME:               maze.pl
+%
+%   STARTED:            Sat Aug 28 22:08:58 2010
+%   MODIFICATIONS:
+%
+%   PURPOSE:
+%
+%
+%
+%   CALLING SEQUENCE:
+%
+%
+%   INPUTS:
+%
+%   OUTPUTS:
+%
+%   EXAMPLE:
+%
+%   NOTES:
+%
+%%

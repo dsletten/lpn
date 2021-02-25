@@ -1,0 +1,31 @@
+%#!/usr/local/bin/pl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   NAME:               kb2.pl
+%
+%   STARTED:            Sat Jul  3 00:26:37 2010
+%   MODIFICATIONS:
+%
+%   PURPOSE:
+%
+%
+%
+%   CALLING SEQUENCE:
+%
+%
+%   INPUTS:
+%
+%   OUTPUTS:
+%
+%   EXAMPLE:
+%
+%   NOTES:
+%
+%%
+
+happy(yolanda).
+listens2Music(mia).
+listens2Music(yolanda) :- happy(yolanda).
+playsAirGuitar(mia) :- listens2Music(mia).
+playsAirGuitar(yolanda) :- listens2Music(yolanda).
+

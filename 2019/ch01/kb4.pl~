@@ -1,0 +1,24 @@
+#!/opt/local/bin/swipl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   Name:               kb4.pl
+%
+%   Started:            Sun Jul 21 23:08:45 2019
+%   Modifications:
+%
+%   Purpose:
+%
+%
+%
+%   Calling Sequence:
+%
+%
+%   Inputs:
+%
+%   Outputs:
+%
+%   Example:
+%
+%   Notes:
+%
+%%

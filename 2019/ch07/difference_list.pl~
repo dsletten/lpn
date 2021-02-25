@@ -1,0 +1,24 @@
+#!/opt/local/bin/swipl -q -t main -f
+%%
+%   -*- Mode: Prolog -*-
+%   Name:               difference_list.pl
+%
+%   Started:            Sun Jun 21 14:07:13 2020
+%   Modifications:
+%
+%   Purpose:
+%
+%
+%
+%   Calling Sequence:
+%
+%
+%   Inputs:
+%
+%   Outputs:
+%
+%   Example:
+%
+%   Notes:
+%
+%%
