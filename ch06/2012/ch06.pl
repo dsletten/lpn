@@ -157,7 +157,7 @@ last([_|T], X) :-
 %%%
 %%%    6.6
 %%%
-%%%    http://en.literateprograms.org/Zebra_Puzzle_(Prolog)
+%%%    https://literateprograms.org/zebra_puzzle__prolog_.html
 %%%    
 %% house(red).
 %% house(blue).

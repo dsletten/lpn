@@ -20,7 +20,7 @@
 %   Example:
 %
 %   Notes:
-%
+%   file:///home/slytobias/prolog/books/LearnPrologNow/2019/ch03/descendants.html
 %%
 
 child(anne, bridget).

@@ -159,10 +159,6 @@ house(_, spanish, jaguar).
 %% house(C, _, snail) :- C \= blue.
 
 %% This assumes house directly to left/right
-%% street(L) :-
-%%     sublist([house(C1, N1, snail), house(C2, japanese, P2)], L),
-%%     sublist([house(C1, N1, snail), house(blue, N3, P3)], L).
-
 street(L) :-
     sublist([house(C1, N1, snail), house(C2, japanese, P2)], L),
     sublist([house(C1, N1, snail), house(blue, N3, P3)], L).
