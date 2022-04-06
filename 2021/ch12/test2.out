@@ -1,0 +1,35 @@
+[the,small,frightened,woman,on,the,table,knows,the,big,fat,cow,under,the,shower]
+
+s(
+  np(
+    det(the)
+            adjstar(
+      [|](
+        adj(small)
+        [|](
+          adj(frightened)
+          []())))
+    n(woman)
+            ppstar(
+      pp(
+        prep(on)
+        np(
+          det(the)
+          n(table)))))
+  vp(
+    v(knows)
+    np(
+      det(the)
+                  adjstar(
+        [|](
+          adj(big)
+          [|](
+            adj(fat)
+            []())))
+      n(cow)
+                  ppstar(
+        pp(
+          prep(under)
+          np(
+            det(the)
+            n(shower)))))))

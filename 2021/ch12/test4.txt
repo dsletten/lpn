@@ -1,0 +1,14 @@
+The small frightened woman on the table knows the big fat cow under the shower.
+
+true
+
+The teacher walks and the dog sings.
+true
+
+
+
+Under the big fat cow.
+
+
+
+false

@@ -1,0 +1,14 @@
+[the,cow,under,the,table,shoots]
+
+s(
+  np(
+    det(the)
+    n(cow)
+            ppstar(
+      pp(
+        prep(under)
+        np(
+          det(the)
+          n(table)))))
+      vp(
+    v(shoots)))

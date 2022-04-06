@@ -1,0 +1,14 @@
+[the,teacher,walks,and,the,dog,sings]
+
+s(
+  np(
+    det(the)
+    n(teacher))
+      vp(
+    v(walks))
+  conj(and)
+  np(
+    det(the)
+    n(dog))
+      vp(
+    v(sings)))
