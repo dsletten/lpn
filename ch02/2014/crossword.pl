@@ -25,7 +25,7 @@
 
 % (load "/Users/dsletten/lisp/packages/strings.lisp")
 % (use-package :strings)
-% (defun process (s) (format t "word(~A, ~A).~%" s (join (coerce s 'list) ","))
+% (defun process (s) (format t "word(~A, ~A).~%" s (join (coerce s 'list) ",")))
 % (dolist (s '("astante" "astoria" "baratto" "cobalto" "pistola" "statale")) (process s))
 
 word(astante, a,s,t,a,n,t,e).

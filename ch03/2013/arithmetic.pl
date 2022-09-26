@@ -157,9 +157,11 @@ multiply(_, 0, 0).
 %%%
 %%%    This is tail-recursive, but goes into infinite loop after first result.
 %%%    
+%%%    A-3 甲
 %% multiply(X, succ(Y), Z1) :-
 %%     add(X, Z, Z1),
 %%     multiply(X, Y, Z).
+
 %% multiply(X, succ(Y), Z1) :-
 %%     add(X, Z, Z1),
 %%     multiply(X, Y, Z), !.
@@ -170,6 +172,8 @@ multiply(_, 0, 0).
 %%%    ?- add(succ(0), succ(0), Two), multiply(Two, Two, Four), multiply(Four, Four, Sixteen), multiply(Sixteen, Sixteen, TwoFiftySix), multiply(TwoFiftySix, TwoFiftySix, X65536), multiply(X65536, TwoFiftySix, Overflow).
 %%%    ERROR: Out of global stack
 %%%    
+
+%%%    A-3 乙
 %% multiply(X, succ(Y), Z1) :-
 %%     multiply(X, Y, Z),
 %%     add(X, Z, Z1).
@@ -188,6 +192,7 @@ multiply(_, 0, 0).
 %%     subtract(Z, X, Z1),
 %%     multiply(X, Y, Z1).
 
+%%%    A-3 丙
 multiply(X, succ(Y), Z1) :-
     subtract(Z1, X, Z),
     multiply(X, Y, Z).
