@@ -1,0 +1,386 @@
+[trace]  ?- zebra_(N).
+   Call: (10) zebra_(_100) ? 
+   Call: (11) _1080=[_1084, _1090, _1096] ? 
+   Exit: (11) [_1084, _1090, _1096]=[_1084, _1090, _1096] ? 
+   Call: (11) sublist_([house(_2220, _2222, snail), house(_2234, japanese, _2238)], [_1084, _1090, _1096]) ? 
+   Call: (12) suffix_(_2796, [_1084, _1090, _1096]) ? 
+   Call: (13) append_(_3410, _2796, [_1084, _1090, _1096]) ? 
+   Exit: (13) append_([], [_1084, _1090, _1096], [_1084, _1090, _1096]) ? 
+   Exit: (12) suffix_([_1084, _1090, _1096], [_1084, _1090, _1096]) ? 
+   Call: (12) prefix_([house(_2220, _2222, snail), house(_2234, japanese, _2238)], [_1084, _1090, _1096]) ? 
+   Call: (13) append_([house(_2220, _2222, snail), house(_2234, japanese, _2238)], _5644, [_1084, _1090, _1096]) ? 
+   Call: (14) append_([house(_2234, japanese, _2238)], _6146, [_1090, _1096]) ? 
+   Call: (15) append_([], _6146, [_1096]) ? 
+   Exit: (15) append_([], [_1096], [_1096]) ? 
+   Exit: (14) append_([house(_2234, japanese, _2238)], [_1096], [house(_2234, japanese, _2238), _1096]) ? 
+   Exit: (13) append_([house(_2220, _2222, snail), house(_2234, japanese, _2238)], [_1096], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Exit: (12) prefix_([house(_2220, _2222, snail), house(_2234, japanese, _2238)], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Exit: (11) sublist_([house(_2220, _2222, snail), house(_2234, japanese, _2238)], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Call: (11) sublist_([house(_10068, _10070, snail), house(blue, _10084, _10086)], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Call: (12) suffix_(_10644, [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Call: (13) append_(_11258, _10644, [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Exit: (13) append_([], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Exit: (12) suffix_([house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Call: (12) prefix_([house(_10068, _10070, snail), house(blue, _10084, _10086)], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Call: (13) append_([house(_10068, _10070, snail), house(blue, _10084, _10086)], _13492, [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Call: (14) append_([house(blue, _10084, _10086)], _13994, [house(_2234, japanese, _2238), _1096]) ? 
+   Call: (15) append_([], _13994, [_1096]) ? 
+   Exit: (15) append_([], [_1096], [_1096]) ? 
+   Exit: (14) append_([house(blue, japanese, _2238)], [_1096], [house(blue, japanese, _2238), _1096]) ? 
+   Exit: (13) append_([house(_2220, _2222, snail), house(blue, japanese, _2238)], [_1096], [house(_2220, _2222, snail), house(blue, japanese, _2238), _1096]) ? 
+   Exit: (12) prefix_([house(_2220, _2222, snail), house(blue, japanese, _2238)], [house(_2220, _2222, snail), house(blue, japanese, _2238), _1096]) ? 
+   Exit: (11) sublist_([house(_2220, _2222, snail), house(blue, japanese, _2238)], [house(_2220, _2222, snail), house(blue, japanese, _2238), _1096]) ? 
+   Call: (11) member_(house(red, english, _17914), [house(_2220, _2222, snail), house(blue, japanese, _2238), _1096]) ? 
+   Exit: (11) member_(house(red, english, snail), [house(red, english, snail), house(blue, japanese, _2238), _1096]) ? 
+   Call: (11) member_(house(green, _19032, _19034), [house(red, english, snail), house(blue, japanese, _2238), _1096]) ? 
+   Call: (12) member_(house(green, _19032, _19034), [house(blue, japanese, _2238), _1096]) ? 
+   Call: (13) member_(house(green, _19032, _19034), [_1096]) ? 
+   Exit: (13) member_(house(green, _19032, _19034), [house(green, _19032, _19034)]) ? 
+   Exit: (12) member_(house(green, _19032, _19034), [house(blue, japanese, _2238), house(green, _19032, _19034)]) ? 
+   Exit: (11) member_(house(green, _19032, _19034), [house(red, english, snail), house(blue, japanese, _2238), house(green, _19032, _19034)]) ? 
+   Call: (11) member_(house(_22374, spanish, jaguar), [house(red, english, snail), house(blue, japanese, _2238), house(green, _19032, _19034)]) ? 
+   Call: (12) member_(house(_22374, spanish, jaguar), [house(blue, japanese, _2238), house(green, _19032, _19034)]) ? 
+   Call: (13) member_(house(_22374, spanish, jaguar), [house(green, _19032, _19034)]) ? 
+   Exit: (13) member_(house(green, spanish, jaguar), [house(green, spanish, jaguar)]) ? 
+   Exit: (12) member_(house(green, spanish, jaguar), [house(blue, japanese, _2238), house(green, spanish, jaguar)]) ? 
+   Exit: (11) member_(house(green, spanish, jaguar), [house(red, english, snail), house(blue, japanese, _2238), house(green, spanish, jaguar)]) ? 
+   Call: (11) member_(house(_25718, _100, zebra), [house(red, english, snail), house(blue, japanese, _2238), house(green, spanish, jaguar)]) ? 
+   Call: (12) member_(house(_25718, _100, zebra), [house(blue, japanese, _2238), house(green, spanish, jaguar)]) ? 
+   Exit: (12) member_(house(blue, japanese, zebra), [house(blue, japanese, zebra), house(green, spanish, jaguar)]) ? 
+   Exit: (11) member_(house(blue, japanese, zebra), [house(red, english, snail), house(blue, japanese, zebra), house(green, spanish, jaguar)]) ? 
+   Exit: (10) zebra_(japanese) ? 
+N = japanese ;
+   Redo: (12) member_(house(_25718, _100, zebra), [house(blue, japanese, _2238), house(green, spanish, jaguar)]) ? 
+   Call: (13) member_(house(_25718, _100, zebra), [house(green, spanish, jaguar)]) ? 
+   Call: (14) member_(house(_25718, _100, zebra), []) ? 
+   Fail: (14) member_(house(_25718, _100, zebra), []) ? 
+   Fail: (13) member_(house(_25718, _100, zebra), [house(green, spanish, jaguar)]) ? 
+   Fail: (12) member_(house(_25718, _100, zebra), [house(blue, japanese, _2238), house(green, spanish, jaguar)]) ? 
+   Fail: (11) member_(house(_25718, _100, zebra), [house(red, english, snail), house(blue, japanese, _2238), house(green, spanish, jaguar)]) ? 
+   Redo: (13) member_(house(_22374, spanish, jaguar), [house(green, _19032, _19034)]) ? 
+   Call: (14) member_(house(_22374, spanish, jaguar), []) ? 
+   Fail: (14) member_(house(_22374, spanish, jaguar), []) ? 
+   Fail: (13) member_(house(_22374, spanish, jaguar), [house(green, _19032, _19034)]) ? 
+   Fail: (12) member_(house(_22374, spanish, jaguar), [house(blue, japanese, _2238), house(green, _19032, _19034)]) ? 
+   Fail: (11) member_(house(_22374, spanish, jaguar), [house(red, english, snail), house(blue, japanese, _2238), house(green, _19032, _19034)]) ? 
+   Redo: (13) member_(house(green, _19032, _19034), [_1096]) ? 
+   Call: (14) member_(house(green, _19032, _19034), []) ? 
+   Fail: (14) member_(house(green, _19032, _19034), []) ? 
+   Fail: (13) member_(house(green, _19032, _19034), [_1096]) ? 
+   Fail: (12) member_(house(green, _19032, _19034), [house(blue, japanese, _2238), _1096]) ? 
+   Fail: (11) member_(house(green, _19032, _19034), [house(red, english, snail), house(blue, japanese, _2238), _1096]) ? 
+   Redo: (11) member_(house(red, english, _17914), [house(_2220, _2222, snail), house(blue, japanese, _2238), _1096]) ? 
+   Call: (12) member_(house(red, english, _17914), [house(blue, japanese, _2238), _1096]) ? 
+   Call: (13) member_(house(red, english, _17914), [_1096]) ? 
+   Exit: (13) member_(house(red, english, _17914), [house(red, english, _17914)]) ? 
+   Exit: (12) member_(house(red, english, _17914), [house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Exit: (11) member_(house(red, english, _17914), [house(_2220, _2222, snail), house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Call: (11) member_(house(green, _43442, _43444), [house(_2220, _2222, snail), house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Exit: (11) member_(house(green, _2222, snail), [house(green, _2222, snail), house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Call: (11) member_(house(_44560, spanish, jaguar), [house(green, _2222, snail), house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Call: (12) member_(house(_44560, spanish, jaguar), [house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Call: (13) member_(house(_44560, spanish, jaguar), [house(red, english, _17914)]) ? 
+   Call: (14) member_(house(_44560, spanish, jaguar), []) ? 
+   Fail: (14) member_(house(_44560, spanish, jaguar), []) ? 
+   Fail: (13) member_(house(_44560, spanish, jaguar), [house(red, english, _17914)]) ? 
+   Fail: (12) member_(house(_44560, spanish, jaguar), [house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Fail: (11) member_(house(_44560, spanish, jaguar), [house(green, _2222, snail), house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Redo: (11) member_(house(green, _43442, _43444), [house(_2220, _2222, snail), house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Call: (12) member_(house(green, _43442, _43444), [house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Call: (13) member_(house(green, _43442, _43444), [house(red, english, _17914)]) ? 
+   Call: (14) member_(house(green, _43442, _43444), []) ? 
+   Fail: (14) member_(house(green, _43442, _43444), []) ? 
+   Fail: (13) member_(house(green, _43442, _43444), [house(red, english, _17914)]) ? 
+   Fail: (12) member_(house(green, _43442, _43444), [house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Fail: (11) member_(house(green, _43442, _43444), [house(_2220, _2222, snail), house(blue, japanese, _2238), house(red, english, _17914)]) ? 
+   Redo: (13) member_(house(red, english, _17914), [_1096]) ? 
+   Call: (14) member_(house(red, english, _17914), []) ? 
+   Fail: (14) member_(house(red, english, _17914), []) ? 
+   Fail: (13) member_(house(red, english, _17914), [_1096]) ? 
+   Fail: (12) member_(house(red, english, _17914), [house(blue, japanese, _2238), _1096]) ? 
+   Fail: (11) member_(house(red, english, _17914), [house(_2220, _2222, snail), house(blue, japanese, _2238), _1096]) ? 
+   Redo: (13) append_(_56854, _10644, [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Call: (14) append_(_57362, _10644, [house(_2234, japanese, _2238), _1096]) ? 
+   Exit: (14) append_([], [house(_2234, japanese, _2238), _1096], [house(_2234, japanese, _2238), _1096]) ? 
+   Exit: (13) append_([house(_2220, _2222, snail)], [house(_2234, japanese, _2238), _1096], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Exit: (12) suffix_([house(_2234, japanese, _2238), _1096], [house(_2220, _2222, snail), house(_2234, japanese, _2238), _1096]) ? 
+   Call: (12) prefix_([house(_10068, _10070, snail), house(blue, _10084, _10086)], [house(_2234, japanese, _2238), _1096]) ? 
+   Call: (13) append_([house(_10068, _10070, snail), house(blue, _10084, _10086)], _60214, [house(_2234, japanese, _2238), _1096]) ? 
+   Call: (14) append_([house(blue, _10084, _10086)], _60716, [_1096]) ? 
+   Call: (15) append_([], _60716, []) ? 
+   Exit: (15) append_([], [], []) ? 
+   Exit: (14) append_([house(blue, _10084, _10086)], [], [house(blue, _10084, _10086)]) ? 
+   Exit: (13) append_([house(_2234, japanese, snail), house(blue, _10084, _10086)], [], [house(_2234, japanese, snail), house(blue, _10084, _10086)]) ? 
+   Exit: (12) prefix_([house(_2234, japanese, snail), house(blue, _10084, _10086)], [house(_2234, japanese, snail), house(blue, _10084, _10086)]) ? 
+   Exit: (11) sublist_([house(_2234, japanese, snail), house(blue, _10084, _10086)], [house(_2220, _2222, snail), house(_2234, japanese, snail), house(blue, _10084, _10086)]) ? 
+   Call: (11) member_(house(red, english, _64636), [house(_2220, _2222, snail), house(_2234, japanese, snail), house(blue, _10084, _10086)]) ? 
+   Exit: (11) member_(house(red, english, snail), [house(red, english, snail), house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Call: (11) member_(house(green, _640, _642), [house(red, english, snail), house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Call: (12) member_(house(green, _640, _642), [house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Exit: (12) member_(house(green, japanese, snail), [house(green, japanese, snail), house(blue, _144, _146)]) ? 
+   Exit: (11) member_(house(green, japanese, snail), [house(red, english, snail), house(green, japanese, snail), house(blue, _144, _146)]) ? 
+   Call: (11) member_(house(_2870, spanish, jaguar), [house(red, english, snail), house(green, japanese, snail), house(blue, _144, _146)]) ? 
+   Call: (12) member_(house(_2870, spanish, jaguar), [house(green, japanese, snail), house(blue, _144, _146)]) ? 
+   Call: (13) member_(house(_2870, spanish, jaguar), [house(blue, _144, _146)]) ? 
+   Exit: (13) member_(house(blue, spanish, jaguar), [house(blue, spanish, jaguar)]) ? 
+   Exit: (12) member_(house(blue, spanish, jaguar), [house(green, japanese, snail), house(blue, spanish, jaguar)]) ? 
+   Exit: (11) member_(house(blue, spanish, jaguar), [house(red, english, snail), house(green, japanese, snail), house(blue, spanish, jaguar)]) ? 
+   Call: (11) member_(house(_6214, _18, zebra), [house(red, english, snail), house(green, japanese, snail), house(blue, spanish, jaguar)]) ? 
+   Call: (12) member_(house(_6214, _18, zebra), [house(green, japanese, snail), house(blue, spanish, jaguar)]) ? 
+   Call: (13) member_(house(_6214, _18, zebra), [house(blue, spanish, jaguar)]) ? 
+   Call: (14) member_(house(_6214, _18, zebra), []) ? 
+   Fail: (14) member_(house(_6214, _18, zebra), []) ? 
+   Fail: (13) member_(house(_6214, _18, zebra), [house(blue, spanish, jaguar)]) ? 
+   Fail: (12) member_(house(_6214, _18, zebra), [house(green, japanese, snail), house(blue, spanish, jaguar)]) ? 
+   Fail: (11) member_(house(_6214, _18, zebra), [house(red, english, snail), house(green, japanese, snail), house(blue, spanish, jaguar)]) ? 
+   Redo: (13) member_(house(_2870, spanish, jaguar), [house(blue, _144, _146)]) ? 
+   Call: (14) member_(house(_2870, spanish, jaguar), []) ? 
+   Fail: (14) member_(house(_2870, spanish, jaguar), []) ? 
+   Fail: (13) member_(house(_2870, spanish, jaguar), [house(blue, _144, _146)]) ? 
+   Fail: (12) member_(house(_2870, spanish, jaguar), [house(green, japanese, snail), house(blue, _144, _146)]) ? 
+   Fail: (11) member_(house(_2870, spanish, jaguar), [house(red, english, snail), house(green, japanese, snail), house(blue, _144, _146)]) ? 
+   Redo: (12) member_(house(green, _640, _642), [house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Call: (13) member_(house(green, _640, _642), [house(blue, _144, _146)]) ? 
+   Call: (14) member_(house(green, _640, _642), []) ? 
+   Fail: (14) member_(house(green, _640, _642), []) ? 
+   Fail: (13) member_(house(green, _640, _642), [house(blue, _144, _146)]) ? 
+   Fail: (12) member_(house(green, _640, _642), [house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Fail: (11) member_(house(green, _640, _642), [house(red, english, snail), house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Redo: (11) member_(house(red, english, _162), [house(_98, _100, snail), house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Call: (12) member_(house(red, english, _162), [house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Call: (13) member_(house(red, english, _162), [house(blue, _144, _146)]) ? 
+   Call: (14) member_(house(red, english, _162), []) ? 
+   Fail: (14) member_(house(red, english, _162), []) ? 
+   Fail: (13) member_(house(red, english, _162), [house(blue, _144, _146)]) ? 
+   Fail: (12) member_(house(red, english, _162), [house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Fail: (11) member_(house(red, english, _162), [house(_98, _100, snail), house(_112, japanese, snail), house(blue, _144, _146)]) ? 
+   Redo: (14) append_(_154, _148, [house(_112, japanese, _116), _86]) ? 
+   Call: (15) append_(_22908, _148, [_86]) ? 
+   Exit: (15) append_([], [_86], [_86]) ? 
+   Exit: (14) append_([house(_112, japanese, _116)], [_86], [house(_112, japanese, _116), _86]) ? 
+   Exit: (13) append_([house(_98, _100, snail), house(_112, japanese, _116)], [_86], [house(_98, _100, snail), house(_112, japanese, _116), _86]) ? 
+   Exit: (12) suffix_([_86], [house(_98, _100, snail), house(_112, japanese, _116), _86]) ? 
+   Call: (12) prefix_([house(_128, _130, snail), house(blue, _144, _146)], [_86]) ? 
+   Call: (13) append_([house(_128, _130, snail), house(blue, _144, _146)], _26320, [_86]) ? 
+   Call: (14) append_([house(blue, _144, _146)], _26822, []) ? 
+   Fail: (14) append_([house(blue, _144, _146)], _26822, []) ? 
+   Fail: (13) append_([house(_128, _130, snail), house(blue, _144, _146)], _28002, [_86]) ? 
+   Fail: (12) prefix_([house(_128, _130, snail), house(blue, _144, _146)], [_86]) ? 
+   Redo: (15) append_(_22908, _148, [_86]) ? 
+   Call: (16) append_(_29624, _148, []) ? 
+   Exit: (16) append_([], [], []) ? 
+   Exit: (15) append_([_86], [], [_86]) ? 
+   Exit: (14) append_([house(_112, japanese, _116), _86], [], [house(_112, japanese, _116), _86]) ? 
+   Exit: (13) append_([house(_98, _100, snail), house(_112, japanese, _116), _86], [], [house(_98, _100, snail), house(_112, japanese, _116), _86]) ? 
+   Exit: (12) suffix_([], [house(_98, _100, snail), house(_112, japanese, _116), _86]) ? 
+   Call: (12) prefix_([house(_128, _130, snail), house(blue, _144, _146)], []) ? 
+   Call: (13) append_([house(_128, _130, snail), house(blue, _144, _146)], _33596, []) ? 
+   Fail: (13) append_([house(_128, _130, snail), house(blue, _144, _146)], _34156, []) ? 
+   Fail: (12) prefix_([house(_128, _130, snail), house(blue, _144, _146)], []) ? 
+   Redo: (16) append_(_29624, _148, []) ? 
+   Fail: (16) append_(_29624, _148, []) ? 
+   Fail: (15) append_(_22908, _148, [_86]) ? 
+   Fail: (14) append_(_154, _148, [house(_112, japanese, _116), _86]) ? 
+   Fail: (13) append_(_37510, _148, [house(_98, _100, snail), house(_112, japanese, _116), _86]) ? 
+   Fail: (12) suffix_(_148, [house(_98, _100, snail), house(_112, japanese, _116), _86]) ? 
+   Fail: (11) sublist_([house(_128, _130, snail), house(blue, _144, _146)], [house(_98, _100, snail), house(_112, japanese, _116), _86]) ? 
+   Redo: (13) append_(_39182, _118, [_74, _80, _86]) ? 
+   Call: (14) append_(_39690, _118, [_80, _86]) ? 
+   Exit: (14) append_([], [_80, _86], [_80, _86]) ? 
+   Exit: (13) append_([_74], [_80, _86], [_74, _80, _86]) ? 
+   Exit: (12) suffix_([_80, _86], [_74, _80, _86]) ? 
+   Call: (12) prefix_([house(_98, _100, snail), house(_112, japanese, _116)], [_80, _86]) ? 
+   Call: (13) append_([house(_98, _100, snail), house(_112, japanese, _116)], _42542, [_80, _86]) ? 
+   Call: (14) append_([house(_112, japanese, _116)], _43044, [_86]) ? 
+   Call: (15) append_([], _43044, []) ? 
+   Exit: (15) append_([], [], []) ? 
+   Exit: (14) append_([house(_112, japanese, _116)], [], [house(_112, japanese, _116)]) ? 
+   Exit: (13) append_([house(_98, _100, snail), house(_112, japanese, _116)], [], [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (12) prefix_([house(_98, _100, snail), house(_112, japanese, _116)], [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (11) sublist_([house(_98, _100, snail), house(_112, japanese, _116)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (11) sublist_([house(_46966, _46968, snail), house(blue, _46982, _46984)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (12) suffix_(_47542, [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (13) append_(_48156, _47542, [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (13) append_([], [_74, house(_98, _100, snail), house(_112, japanese, _116)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (12) suffix_([_74, house(_98, _100, snail), house(_112, japanese, _116)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (12) prefix_([house(_46966, _46968, snail), house(blue, _46982, _46984)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (13) append_([house(_46966, _46968, snail), house(blue, _46982, _46984)], _50390, [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (14) append_([house(blue, _46982, _46984)], _50892, [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (15) append_([], _50892, [house(_112, japanese, _116)]) ? 
+   Exit: (15) append_([], [house(_112, japanese, _116)], [house(_112, japanese, _116)]) ? 
+   Exit: (14) append_([house(blue, _100, snail)], [house(_112, japanese, _116)], [house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (13) append_([house(_46966, _46968, snail), house(blue, _100, snail)], [house(_112, japanese, _116)], [house(_46966, _46968, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (12) prefix_([house(_46966, _46968, snail), house(blue, _100, snail)], [house(_46966, _46968, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (11) sublist_([house(_46966, _46968, snail), house(blue, _100, snail)], [house(_46966, _46968, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (11) member_(house(red, english, _54812), [house(_46966, _46968, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (11) member_(house(red, english, snail), [house(red, english, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (11) member_(house(green, _55930, _55932), [house(red, english, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (12) member_(house(green, _55930, _55932), [house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (13) member_(house(green, _55930, _55932), [house(_112, japanese, _116)]) ? 
+   Exit: (13) member_(house(green, japanese, _116), [house(green, japanese, _116)]) ? 
+   Exit: (12) member_(house(green, japanese, _116), [house(blue, _100, snail), house(green, japanese, _116)]) ? 
+   Exit: (11) member_(house(green, japanese, _116), [house(red, english, snail), house(blue, _100, snail), house(green, japanese, _116)]) ? 
+   Call: (11) member_(house(_59272, spanish, jaguar), [house(red, english, snail), house(blue, _100, snail), house(green, japanese, _116)]) ? 
+   Call: (12) member_(house(_59272, spanish, jaguar), [house(blue, _100, snail), house(green, japanese, _116)]) ? 
+   Call: (13) member_(house(_59272, spanish, jaguar), [house(green, japanese, _116)]) ? 
+   Call: (14) member_(house(_59272, spanish, jaguar), []) ? 
+   Fail: (14) member_(house(_59272, spanish, jaguar), []) ? 
+   Fail: (13) member_(house(_59272, spanish, jaguar), [house(green, japanese, _116)]) ? 
+   Fail: (12) member_(house(_59272, spanish, jaguar), [house(blue, _100, snail), house(green, japanese, _116)]) ? 
+   Fail: (11) member_(house(_59272, spanish, jaguar), [house(red, english, snail), house(blue, _100, snail), house(green, japanese, _116)]) ? 
+   Redo: (13) member_(house(green, _55930, _55932), [house(_112, japanese, _116)]) ? 
+   Call: (14) member_(house(green, _55930, _55932), []) ? 
+   Fail: (14) member_(house(green, _55930, _55932), []) ? 
+   Fail: (13) member_(house(green, _168, _170), [house(_112, japanese, _116)]) ? 
+   Fail: (12) member_(house(green, _168, _170), [house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Fail: (11) member_(house(green, _168, _170), [house(red, english, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Redo: (11) member_(house(red, english, _162), [house(_134, _136, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (12) member_(house(red, english, _162), [house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (13) member_(house(red, english, _162), [house(_112, japanese, _116)]) ? 
+   Call: (14) member_(house(red, english, _162), []) ? 
+   Fail: (14) member_(house(red, english, _162), []) ? 
+   Fail: (13) member_(house(red, english, _162), [house(_112, japanese, _116)]) ? 
+   Fail: (12) member_(house(red, english, _162), [house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Fail: (11) member_(house(red, english, _162), [house(_134, _136, snail), house(blue, _100, snail), house(_112, japanese, _116)]) ? 
+   Redo: (13) append_(_6346, _154, [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (14) append_(_6854, _154, [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (14) append_([], [house(_98, _100, snail), house(_112, japanese, _116)], [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (13) append_([_74], [house(_98, _100, snail), house(_112, japanese, _116)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (12) suffix_([house(_98, _100, snail), house(_112, japanese, _116)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (12) prefix_([house(_134, _136, snail), house(blue, _150, _152)], [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (13) append_([house(_134, _136, snail), house(blue, _150, _152)], _9706, [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (14) append_([house(blue, _150, _152)], _10208, [house(_112, japanese, _116)]) ? 
+   Call: (15) append_([], _10208, []) ? 
+   Exit: (15) append_([], [], []) ? 
+   Exit: (14) append_([house(blue, japanese, _116)], [], [house(blue, japanese, _116)]) ? 
+   Exit: (13) append_([house(_98, _100, snail), house(blue, japanese, _116)], [], [house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Exit: (12) prefix_([house(_98, _100, snail), house(blue, japanese, _116)], [house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Exit: (11) sublist_([house(_98, _100, snail), house(blue, japanese, _116)], [_74, house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (11) member_(house(red, english, _14128), [_74, house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Exit: (11) member_(house(red, english, _14128), [house(red, english, _14128), house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (11) member_(house(green, _15246, _15248), [house(red, english, _14128), house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (12) member_(house(green, _15246, _15248), [house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Exit: (12) member_(house(green, _100, snail), [house(green, _100, snail), house(blue, japanese, _116)]) ? 
+   Exit: (11) member_(house(green, _100, snail), [house(red, english, _14128), house(green, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (11) member_(house(_17476, spanish, jaguar), [house(red, english, _14128), house(green, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (12) member_(house(_17476, spanish, jaguar), [house(green, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (13) member_(house(_17476, spanish, jaguar), [house(blue, japanese, _116)]) ? 
+   Call: (14) member_(house(_17476, spanish, jaguar), []) ? 
+   Fail: (14) member_(house(_17476, spanish, jaguar), []) ? 
+   Fail: (13) member_(house(_17476, spanish, jaguar), [house(blue, japanese, _116)]) ? 
+   Fail: (12) member_(house(_17476, spanish, jaguar), [house(green, _100, snail), house(blue, japanese, _116)]) ? 
+   Fail: (11) member_(house(_17476, spanish, jaguar), [house(red, english, _14128), house(green, _100, snail), house(blue, japanese, _116)]) ? 
+   Redo: (12) member_(house(green, _15246, _15248), [house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (13) member_(house(green, _15246, _15248), [house(blue, japanese, _116)]) ? 
+   Call: (14) member_(house(green, _15246, _15248), []) ? 
+   Fail: (14) member_(house(green, _15246, _15248), []) ? 
+   Fail: (13) member_(house(green, _15246, _15248), [house(blue, japanese, _116)]) ? 
+   Fail: (12) member_(house(green, _15246, _15248), [house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Fail: (11) member_(house(green, _15246, _15248), [house(red, english, _14128), house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Redo: (11) member_(house(red, english, _14128), [_74, house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (12) member_(house(red, english, _14128), [house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Exit: (12) member_(house(red, english, snail), [house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Exit: (11) member_(house(red, english, snail), [_74, house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (11) member_(house(green, _28050, _28052), [_74, house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Exit: (11) member_(house(green, _28050, _28052), [house(green, _28050, _28052), house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (11) member_(house(_29168, spanish, jaguar), [house(green, _28050, _28052), house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Exit: (11) member_(house(green, spanish, jaguar), [house(green, spanish, jaguar), house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (11) member_(house(_30288, _18, zebra), [house(green, spanish, jaguar), house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (12) member_(house(_30288, _18, zebra), [house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (13) member_(house(_30288, _18, zebra), [house(blue, japanese, _116)]) ? 
+   Exit: (13) member_(house(blue, japanese, zebra), [house(blue, japanese, zebra)]) ? 
+   Exit: (12) member_(house(blue, japanese, zebra), [house(red, english, snail), house(blue, japanese, zebra)]) ? 
+   Exit: (11) member_(house(blue, japanese, zebra), [house(green, spanish, jaguar), house(red, english, snail), house(blue, japanese, zebra)]) ? 
+   Exit: (10) zebra_(japanese) ? 
+N = japanese ;
+   Redo: (13) member_(house(_30288, _18, zebra), [house(blue, japanese, _116)]) ? 
+   Call: (14) member_(house(_30288, _18, zebra), []) ? 
+   Fail: (14) member_(house(_30288, _18, zebra), []) ? 
+   Fail: (13) member_(house(_30288, _18, zebra), [house(blue, japanese, _116)]) ? 
+   Fail: (12) member_(house(_30288, _18, zebra), [house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Fail: (11) member_(house(_30288, _18, zebra), [house(green, spanish, jaguar), house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Redo: (11) member_(house(_29168, spanish, jaguar), [house(green, _28050, _28052), house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (12) member_(house(_29168, spanish, jaguar), [house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (13) member_(house(_29168, spanish, jaguar), [house(blue, japanese, _116)]) ? 
+   Call: (14) member_(house(_29168, spanish, jaguar), []) ? 
+   Fail: (14) member_(house(_29168, spanish, jaguar), []) ? 
+   Fail: (13) member_(house(_29168, spanish, jaguar), [house(blue, japanese, _116)]) ? 
+   Fail: (12) member_(house(_29168, spanish, jaguar), [house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Fail: (11) member_(house(_29168, spanish, jaguar), [house(green, _28050, _28052), house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Redo: (11) member_(house(green, _28050, _28052), [_74, house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (12) member_(house(green, _28050, _28052), [house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Call: (13) member_(house(green, _28050, _28052), [house(blue, japanese, _116)]) ? 
+   Call: (14) member_(house(green, _28050, _28052), []) ? 
+   Fail: (14) member_(house(green, _28050, _28052), []) ? 
+   Fail: (13) member_(house(green, _28050, _28052), [house(blue, japanese, _116)]) ? 
+   Fail: (12) member_(house(green, _28050, _28052), [house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Fail: (11) member_(house(green, _28050, _28052), [_74, house(red, english, snail), house(blue, japanese, _116)]) ? 
+   Redo: (12) member_(house(red, english, _14128), [house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Call: (13) member_(house(red, english, _14128), [house(blue, japanese, _116)]) ? 
+   Call: (14) member_(house(red, english, _14128), []) ? 
+   Fail: (14) member_(house(red, english, _14128), []) ? 
+   Fail: (13) member_(house(red, english, _14128), [house(blue, japanese, _116)]) ? 
+   Fail: (12) member_(house(red, english, _14128), [house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Fail: (11) member_(house(red, english, _14128), [_74, house(_98, _100, snail), house(blue, japanese, _116)]) ? 
+   Redo: (14) append_(_6854, _154, [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (15) append_(_51908, _154, [house(_112, japanese, _116)]) ? 
+   Exit: (15) append_([], [house(_112, japanese, _116)], [house(_112, japanese, _116)]) ? 
+   Exit: (14) append_([house(_98, _100, snail)], [house(_112, japanese, _116)], [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (13) append_([_74, house(_98, _100, snail)], [house(_112, japanese, _116)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (12) suffix_([house(_112, japanese, _116)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (12) prefix_([house(_134, _136, snail), house(blue, _150, _152)], [house(_112, japanese, _116)]) ? 
+   Call: (13) append_([house(_134, _136, snail), house(blue, _150, _152)], _55320, [house(_112, japanese, _116)]) ? 
+   Call: (14) append_([house(blue, _150, _152)], _55822, []) ? 
+   Fail: (14) append_([house(blue, _150, _152)], _55822, []) ? 
+   Fail: (13) append_([house(_134, _136, snail), house(blue, _150, _152)], _57002, [house(_112, japanese, _116)]) ? 
+   Fail: (12) prefix_([house(_134, _136, snail), house(blue, _150, _152)], [house(_112, japanese, _116)]) ? 
+   Redo: (15) append_(_51908, _154, [house(_112, japanese, _116)]) ? 
+   Call: (16) append_(_58624, _154, []) ? 
+   Exit: (16) append_([], [], []) ? 
+   Exit: (15) append_([house(_112, japanese, _116)], [], [house(_112, japanese, _116)]) ? 
+   Exit: (14) append_([house(_98, _100, snail), house(_112, japanese, _116)], [], [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (13) append_([_74, house(_98, _100, snail), house(_112, japanese, _116)], [], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Exit: (12) suffix_([], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Call: (12) prefix_([house(_134, _136, snail), house(blue, _150, _152)], []) ? 
+   Call: (13) append_([house(_134, _136, snail), house(blue, _150, _152)], _62596, []) ? 
+   Fail: (13) append_([house(_134, _136, snail), house(blue, _150, _152)], _63156, []) ? 
+   Fail: (12) prefix_([house(_134, _136, snail), house(blue, _150, _152)], []) ? 
+   Redo: (16) append_(_58624, _154, []) ? 
+   Fail: (16) append_(_58624, _154, []) ? 
+   Fail: (15) append_(_166, _154, [house(_112, japanese, _116)]) ? 
+   Fail: (14) append_(_160, _154, [house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Fail: (13) append_(_1326, _154, [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Fail: (12) suffix_(_154, [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Fail: (11) sublist_([house(_134, _136, snail), house(blue, _150, _152)], [_74, house(_98, _100, snail), house(_112, japanese, _116)]) ? 
+   Redo: (14) append_(_124, _118, [_80, _86]) ? 
+   Call: (15) append_(_3506, _118, [_86]) ? 
+   Exit: (15) append_([], [_86], [_86]) ? 
+   Exit: (14) append_([_80], [_86], [_80, _86]) ? 
+   Exit: (13) append_([_74, _80], [_86], [_74, _80, _86]) ? 
+   Exit: (12) suffix_([_86], [_74, _80, _86]) ? 
+   Call: (12) prefix_([house(_98, _100, snail), house(_112, japanese, _116)], [_86]) ? 
+   Call: (13) append_([house(_98, _100, snail), house(_112, japanese, _116)], _6918, [_86]) ? 
+   Call: (14) append_([house(_112, japanese, _116)], _7420, []) ? 
+   Fail: (14) append_([house(_112, japanese, _116)], _7420, []) ? 
+   Fail: (13) append_([house(_98, _100, snail), house(_112, japanese, _116)], _8600, [_86]) ? 
+   Fail: (12) prefix_([house(_98, _100, snail), house(_112, japanese, _116)], [_86]) ? 
+   Redo: (15) append_(_3506, _118, [_86]) ? 
+   Call: (16) append_(_10222, _118, []) ? 
+   Exit: (16) append_([], [], []) ? 
+   Exit: (15) append_([_86], [], [_86]) ? 
+   Exit: (14) append_([_80, _86], [], [_80, _86]) ? 
+   Exit: (13) append_([_74, _80, _86], [], [_74, _80, _86]) ? 
+   Exit: (12) suffix_([], [_74, _80, _86]) ? 
+   Call: (12) prefix_([house(_98, _100, snail), house(_112, japanese, _116)], []) ? 
+   Call: (13) append_([house(_98, _100, snail), house(_112, japanese, _116)], _14194, []) ? 
+   Fail: (13) append_([house(_98, _100, snail), house(_112, japanese, _116)], _14754, []) ? 
+   Fail: (12) prefix_([house(_98, _100, snail), house(_112, japanese, _116)], []) ? 
+   Redo: (16) append_(_10222, _118, []) ? 
+   Fail: (16) append_(_10222, _118, []) ? 
+   Fail: (15) append_(_3506, _118, [_86]) ? 
+   Fail: (14) append_(_124, _118, [_80, _86]) ? 
+   Fail: (13) append_(_18108, _118, [_74, _80, _86]) ? 
+   Fail: (12) suffix_(_118, [_74, _80, _86]) ? 
+   Fail: (11) sublist_([house(_98, _100, snail), house(_112, japanese, _116)], [_74, _80, _86]) ? 
+   Fail: (10) zebra_(_18) ? 
+false.

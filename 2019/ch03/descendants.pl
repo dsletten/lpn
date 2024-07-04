@@ -123,7 +123,7 @@ descend_xxx(X, Y) :-
 %%%    deeper recursively.
 %%%    I encountered this in the query descend_xxx(X, Y). After successfully finding the pairs a/b, b/c, c/d, d/e, a/c, a/d, a/e,
 %%%    the search then nosedived trying to satisfy descend_xxx(emily, Y). emily is in the knowledge base but not as a parent.
-%%%    Thus, stack overflow... The book raises an alternative example descend(rose, Y) for a person not even in the KB.
+%%%    Thus, stack overflow... The book raises an alternative example descend(rose, Y) (241 页) for a person not even in the KB.
 %%%    Of course they would have no child either.
 
 % ?- descend_aaa(X, Y).
