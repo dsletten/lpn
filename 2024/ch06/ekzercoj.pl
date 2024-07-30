@@ -273,6 +273,79 @@ sublist_(S, L) :-
     suffix_(S1, L),
     prefix_(S, S1).
 
+
+prefix1([], _).
+prefix1([H|T], [H|L]) :-
+    prefix1(T, L).
+
+%% ?- prefix1([a, b, c], [a, b, c, d, e]).
+%% true.
+
+%% ?- prefix1(P, [a, b, c, d, e]).
+%% P = [] ;
+%% P = [a] ;
+%% P = [a, b] ;
+%% P = [a, b, c] ;
+%% P = [a, b, c, d] ;
+%% P = [a, b, c, d, e] ;
+%% false.
+
+%% ?- prefix1([a, b, c], [a, b]).
+%% false.
+
+suffix1([], _).
+suffix1(S, L) :-
+    match1(S, L).
+
+%% match1([], []).
+%% match1([H|T], [H|L]) :-
+%%     match2(T, L).
+%% match1([H|T], [H|L]) :-
+%%     match1([H|T], L).
+%% match1([A|T], [B|L]) :-
+%%     A \= B,
+%%     match1([A|T], L).
+
+match1([], []).
+match1([H|T], [H|L]) :-
+    match2(T, L);
+    match1([H|T], L).
+match1([A|T], [B|L]) :-
+    A \= B,
+    match1([A|T], L).
+
+match2([], []).
+match2([H|T], [H|L]) :-
+    match2(T, L).
+
+%% ?- suffix1([a, b, c], [a, b, c]).
+%% true ;
+%% false.
+
+%% ?- suffix1([a, b, c], [a, a, b, c]).
+%% true ;
+%% false.
+
+%% ?- suffix1([a, b, c], [a, b, a, b, c]).
+%% true ;
+%% false.
+
+%% ?- suffix1([a, b, c], [a, b, a, c]).
+%% false.
+
+%% ?- suffix1([a, b, c], [a, x, a, b, a, b, c]).
+%% true ;
+%% false.
+
+%% ?- suffix1([a, b, c], [x, x, x, a, b, c]).
+%% true ;
+%% false.
+
+suffix2(L, L).
+suffix2(L, [_|T]) :-
+    suffix2(L, T).
+
+
 %%%
 %%%    1.
 %%%
