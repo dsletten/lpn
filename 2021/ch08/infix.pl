@@ -27,10 +27,16 @@
 %%%
 %%%    Expression must be fully-parenthesized!
 %%%    
-e(N, e(N)) --> n(num(N)).
+e(N, n(N)) --> n(num(N)).
 %e(V, e(E1, Op, E2)) --> '(', e(V1, E1), operator(op(Op)), e(V2, E2), ')', {P =.. [Op, V1, V2], V is P}.
 %e(V, e(E1, Op, E2)) --> lpar, e(V1, E1), operator(op(Op)), e(V2, E2), rpar, {P =.. [Op, V1, V2], V is P}.
-e(V, e(E1, Op, E2)) --> ['('], e(V1, E1), operator(op(Op)), e(V2, E2), [')'], {P =.. [Op, V1, V2], V is P}.
+e(V, e(E1, Op, E2)) --> ['('],
+                        e(V1, E1),
+                        operator(op(Op)),
+                        e(V2, E2),
+                        [')'],
+                        {P =.. [Op, V1, V2],
+                         V is P}.
 
 n(num(N)) --> [N], {number(N)}.
 
@@ -137,6 +143,18 @@ lex(mod, operator).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%    Sedgewick Algorithms 4e pg. 129
 %%    Must be fully parenthesized.
+
+%%%
+%%%    This version properly evaluates legal expressions, but it also allows invalid expressions
+%% ?- stack_eval_infix(['(', 8], V).
+%% V = 8 ;
+%% false.
+
+%% ?- stack_eval_infix(['(', '(', 8], V).
+%% V = 8 ;
+%% false.
+
+
 operator(+).
 operator(-).
 operator(*).

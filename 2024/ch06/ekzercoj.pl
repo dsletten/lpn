@@ -372,3 +372,16 @@ flatten1([[H|T1]|T2], L) :-
     flatten1([H,T1|T2], L).
 flatten1([H|T], [H|L]) :-
     flatten1(T, L).
+
+%%
+%%    A little better
+%%    
+flatten2([], []).
+flatten2([[]|T], L) :-
+    flatten2(T, L).
+flatten2([H|T], [H|L]) :-
+    H \= [],
+    H \= [_|_],
+    flatten2(T, L).
+flatten2([[H|T1]|T2], L) :-
+    flatten2([H,T1|T2], L).

@@ -59,6 +59,8 @@ flatten_1([H|T], L) :-
 %%                           (flatten-7 (rest l))))
 %%         (t (list l))))
 %% ------------------------------------------------------------
+
+
 %% These 2 are effectively the same. They skip a lot of CONSing for shallowly-nested lists (especially unnested lists!)
 %% (defun flatten (l)
 %%   (cond ((endp l) '())
@@ -88,6 +90,8 @@ flatten_2([H|T], L) :-
     flatten_2(T, T1),
     append(H1, T1, L).
 flatten_2([H|T], [H|L]) :-
+    H \= [],
+    H \= [_|_],
     flatten_2(T, L).
 
 %% (defun flatten-3 (obj)
@@ -108,6 +112,7 @@ flatten_3([H|T], [H|L]) :-
     H \= [_|_],
     flatten_3(T, L).
 flatten_3([H|T], L) :-
+    H = [_|_],
     flatten_3(H, H1),
     flatten_3(T, T1),
     append(H1, T1, L).
@@ -157,14 +162,28 @@ flatten_3([H|T], L) :-
 %%         ((atom (car l)) (cons (car l) (smash (cdr l))))
 %%         ((atom (caar l)) (cons (caar l) (smash (cons (cdar l) (cdr l)))) )
 %%         (t (smash (cons (smash (car l)) (cdr l)))) ))
+
+smash([], []).
+smash([[]|T], L) :-
+    smash(T, L).
+smash([H|T], [H|L]) :-
+    H \= [],
+    H \= [_|_],
+    smash(T, L).
+smash([[H|T]|T1], [H|L]) :-
+    H \= [_|_],
+    smash([T|T1], L).
+smash([[[H|T]|T1]|T2], L) :-
+    smash([[H|T]|T1], L1),
+    smash([L1|T2], L).
 %% ------------------------------------------------------------
 %% Hoist
 %% These 3 are the same except for the corner case below.
 %% (defun flatten-2020 (tree)
 %%   (cond ((atom tree) tree) ; Return initial atom as is. This also supports dotted lists.
-%%         ((null (car tree)) (flatten (cdr tree)))
-%%         ((atom (car tree)) (cons (car tree) (flatten (cdr tree))))
-%%         (t (flatten (cons (car (car tree)) (cons (cdr (car tree)) (cdr tree)))) )))
+%%         ((null (car tree)) (flatten-2020 (cdr tree)))
+%%         ((atom (car tree)) (cons (car tree) (flatten-2020 (cdr tree))))
+%%         (t (flatten-2020 (cons (car (car tree)) (cons (cdr (car tree)) (cdr tree)))) )))
 
 %% (defun flatten-8 (obj)
 %%   (cond ((endp obj) '())
@@ -179,6 +198,17 @@ flatten_3([H|T], L) :-
 %%         ((null (first obj)) (flatten-2011 (rest obj)))
 %%         ((atom (first obj)) (cons (first obj) (flatten-2011 (rest obj))))
 %%         (t (flatten-2011 (list* (first (first obj)) (rest (first obj)) (rest obj)))) ))
+
+flatten_4(X, X) :-
+    X \= [_|_].
+flatten_4([[]|T], L) :-
+    flatten_4(T, L).
+flatten_4([H|T], [H|L]) :-
+    H \= [],
+    H \= [_|_],
+    flatten_4(T, L).
+flatten_4([[H|T]|T1], L) :-
+    flatten_4([H|[T|T1]], L).
 
 %% Variant
 %% (defun flatten-2012 (obj)
@@ -306,6 +336,39 @@ flatten_3([H|T], L) :-
 %%     (if (atom tree)
 %%         tree
 %%         (flatten-aux tree '()))) )
+
+flatten_5(X, X) :-
+    X \= [_|_].
+flatten_5(L, F) :-
+    L = [_|_],
+    flatten_5(L, F, []).
+flatten_5([], F, R) :-
+    reverse(R, F).
+flatten_5([[]|T], F, R) :-
+    flatten_5(T, F, R).
+flatten_5([H|T], F, R) :-
+    H \= [],
+    H \= [_|_],
+    flatten_5(T, F, [H|R]).
+flatten_5([[H|T]|T1], F, R) :-
+    flatten_5([H,T|T1], F, R).
+
+flatten2([], []).
+flatten2([[]|T], L) :-
+    flatten2(T, L).
+flatten2([H|T], [H|L]) :-
+    H \= [],
+    H \= [_|_],
+    flatten2(T, L).
+flatten2([[H|T1]|T2], L) :-
+    flatten2([H,T1|T2], L).
+
+build_list(0, []).
+build_list(N, [N|T]) :-
+    N > 0,
+    N1 is N - 1,
+    build_list(N1, T).
+
 
 %% (flatten-8a 'a) => Error: The value A is not of the expected type LIST.
 %% (flatten-2011a 'a) => Error: The value A is not of the expected type LIST.
